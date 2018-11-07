@@ -25,8 +25,5 @@ app.use('/',Api);
 
 
 
-
-app.listen(SERVER_PORT, () => {
-    console.log("Server started on port " + SERVER_PORT);
-  });
-  
+// "start": "node scripts/start.js" מחקתי מpackage json בתכונה scripts
+app.listen(process.env.PORT || SERVER_PORT);
